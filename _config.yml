@@ -10,8 +10,13 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme: jekyll-theme-midnight
+remote_theme: pages-themes/jekyll-theme-midnight
 
 title                    : "Ruins"
-url                      : https://eajnimeel.github.io
+url                      : "https://eajnimeel.github.io"
+baseurl                  : ""
 repository               : "eajnimeel/eajnimeel.github.io"
+
+markdown: kramdown
+highlighter: rouge
+paginate: 10
