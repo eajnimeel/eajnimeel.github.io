@@ -98,7 +98,7 @@ analytics:
 author:
   name             : "Minjae Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Human."
+  bio              : ""
   location         : "Seoul, Korea"
   email            :
   links:
@@ -281,5 +281,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-theme: jekyll-theme-hacker
