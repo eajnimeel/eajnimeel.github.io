@@ -5,7 +5,7 @@ categories: 자바
 ---
 
 자바에서 무언가 문자열을 합칠때,
-일반적인 문자열(`String[]` 나, `List<String>`)은
+일반적인 문자열 (`String[]` 나, `List<String>`)은
 
 
 ```java
