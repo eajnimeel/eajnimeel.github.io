@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "문자열 합치기
+title:  "문자열 합치기"
 categories: 자바
 ---
 
