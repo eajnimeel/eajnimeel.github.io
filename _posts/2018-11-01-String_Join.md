@@ -2,6 +2,11 @@
 layout: post
 title:  "문자열 합치기"
 categories: 자바
+tags: 
+ - java 8
+ - String
+ - Stream
+ - 
 ---
 
 자바에서 무언가 문자열을 합칠때,
