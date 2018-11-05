@@ -8,3 +8,4 @@ description              : "Ruins"
 url : "https://eajnumeel.github.io"
 baseurl : ""
 repository               : "eajnimeel/eajnimeel.github.io"
+gem "github-pages", group: :jekyll_plugins
