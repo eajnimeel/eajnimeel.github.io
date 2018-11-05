@@ -1,4 +1,10 @@
 remote_theme: pages-themes/midnight
+
+locale                   : "en-US"
+title                    : "Site Title"
+title_separator          : "-"
+name                     : "Minjae Lee"
+description              : "Ruins"
 url : "https://eajnumeel.github.io"
 baseurl : ""
 repository               : "eajnimeel/eajnimeel.github.io"
