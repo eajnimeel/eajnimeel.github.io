@@ -1,7 +1,7 @@
 ---
-title : 자바 Path & Paths & Files
-category: JAVA
-tag: JAVA, JAVA7
+title: 자바 Path & Paths & Files
+categories: JAVA
+tags: [JAVA, JAVA7]
 ---
 
 자바 7에서 파일을 다루는 다른 방법으로 `java.nio.file.Path`, `java.nio.file.Paths`, `java.nio.file.Files` 의 인터페이스/클래스가 추가됨.
