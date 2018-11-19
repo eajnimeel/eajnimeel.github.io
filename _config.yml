@@ -288,3 +288,13 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/
