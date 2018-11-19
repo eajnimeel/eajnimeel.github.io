@@ -274,7 +274,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _posts
@@ -288,8 +287,3 @@ defaults:
       comments: # true
       share: true
       related: true
-  - scope:
-      path: ''
-      type: tags
-    values:
-      layout: tag
