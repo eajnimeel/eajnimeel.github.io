@@ -293,8 +293,3 @@ defaults:
       type: tags
     values:
       layout: tag
-
-collections:
-  tags:
-    output: true
-    permalink: /tags/:path/
