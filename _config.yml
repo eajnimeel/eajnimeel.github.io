@@ -274,10 +274,6 @@ compress_html:
   ignore:
     envs: development
 
-collections:
-  tags:
-    output: true
-    permalink: /tags/:path/
 
 # Defaults
 defaults:
