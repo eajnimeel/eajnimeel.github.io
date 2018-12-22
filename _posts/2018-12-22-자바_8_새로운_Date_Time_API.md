@@ -5,7 +5,7 @@ tags: [java8]
 ---
 
 `java.time` 패키지에 8이전에서 제공하던 날짜와 시간에 관련된 API의 문제점을 개선한 새로운 클래스들이 포함됨.
-기존에 문제점들은 일반적으로 익숙하지 않을 동시성 문제라던가, 월은 1부터 시작하지만 일을 0부터 시작하는 등의 이상한 설계등이 있다고 함
+기존에 문제점들은 일반적으로 익숙하지 않을 동시성 문제라던가, 월은 0부터 시작하지만 일은 1부터 시작하는 등의 이상한 설계 등이 있다고 함
 
 ```java
 // java 8 이전
@@ -21,7 +21,7 @@ LocalDate ld = LocalDate.now(); // 현재의 LocalDate 인스턴스
 ld.withMonth(1); // ld에서 월을 1월로 변경한 인스턴스 반환. Date 객체의 인스턴스인 d가 변경된 것과 달리 LocalDate 객체의 인스턴스인 ld는 변경이 안 됨.
 ```
 
-이전과 달리 LocalDate, LocalTime, LocalDateTime 객체는 불변 객체이기 때문에, 직접 인스턴스의 값을 변경할 수 없음.
+이전과 달리 `LocalDate`, `LocalTime`, `LocalDateTime` 객체는 불변 객체이기 때문에, 직접 인스턴스의 값을 변경할 수 없음.
 따라서 계산이 필요한 경우 API 호출시 반환되는 인스턴스를 받아서 써야 함.
 
 ```java
@@ -52,7 +52,7 @@ LocalDateTime xmasLunchTime = LocalDateTime.of(2018, 12, 25, 12, 30, 00);
 LocalDateTime xmasLunchTime2 = LocalDateTime.of(xmas, lunchStartTime);
 ```
 
-일시의 특정 데이터까지만 확인하고 싶을때, 잘라서 사용할 수 있는 API를 제공. Month 부터는 안됨.
+일시의 특정 데이터까지만 확인하고 싶을때, 잘라서 사용할 수 있는 API를 제공. `ChronoUnit.MONTH` 부터는 안됨.
 
 ```java
 LocalDateTime ldt = LocalDateTime.now();
@@ -75,7 +75,7 @@ ZonedDateTime dateTimeOfBangkok = ZonedDateTime.of(dateTimeOfSeoul.tolDateTime()
 ZoneDateTime dateTimeOfNewYork = dateTimeOfSeoul.withZoneSameLocal(ZoneId.of("America/Chicago"));  
 ```
 
-이는 물론 시차에 따른 데이터로도 처리 가능. 타임존이 섬머타임 같은 것도 처리해주므로 `ZoneId`의 타임존을 이용하는 것이 편리하다함.
+이는 물론 시차에 따른 데이터로도 처리 가능. 타임존이 섬머타임 같은 것도 처리해주므로 위의 예제와 같이 `ZoneId`의 타임존을 이용하는 것이 편리하다함.
 
 ```java
 ZoneOffset seoulZoneOffset = ZoneOffset.ofHours(9);
@@ -84,7 +84,7 @@ ZonedDateTime.now(seoulZoneOffset);
 ZonedDateTime.now(tokyoZoneOffset);
 ```
 
-여기까지의 내용은 다음과 같이도 표현 가능
+여기까지의 내용은 다음과 같이도 표현 가능.
 
 ```java
 Year year = Year.of(2018);
@@ -94,7 +94,7 @@ LoalDateTime ldt = Year.of(2018).atMonth(12).atDay(25).atTime(00, 00);
 ZonedDateTime zdt = Year.of(2018).atMonth(12).atDay(25).atTime(00, 00).atZone(ZoneId.of("Europe/London"));
 ```
 
-문자열로는 다음과 같이 변환 가능
+문자열로는 다음과 같이 변환 가능.
 
 ```java
 import java.time.format.*;
