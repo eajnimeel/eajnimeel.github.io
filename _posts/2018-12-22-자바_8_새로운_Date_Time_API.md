@@ -9,7 +9,7 @@ tags: [java8]
 
 ```java
 // java 8 이전
-import java.Util.Date;
+import java.util.Date;
 
 Date d = new Date(); // 현재의 Date 인스턴스
 d.setMonth(1); // 현재 Date 인스턴스에서 월을 2로 변경
@@ -35,7 +35,7 @@ LocalDate xmas3 = currentDate.withMonth(12).withDayOfYear(25);
 LocalDate xmasEve = xmas.minusDays(1); // 2018-12-24
 LocalDate xmaxEve2 = xmas.minus(1, ChronoUnit.DAYS); // 2018-12-24
 
-LocalTime lunchStartTime = LocalTime.of(12, 30); // 12:00
+LocalTime lunchStartTime = LocalTime.of(12, 30); // 12:30
 LocalTime lunchEndTime = lunchStartTime.plusHours(1); // 13:30
 LocalTime startTime = LocalTime.parse("09:00"); // 09:00
 LocalTime closingTime = startTime.withHour(18); // 18:00
