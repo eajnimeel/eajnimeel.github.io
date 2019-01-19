@@ -29,7 +29,7 @@ sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-## 테마 변경
+### 테마 변경
 
 `~/.zshrc` 파일 수정
 
@@ -39,12 +39,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ZSH_THEME="agnoster"
 ```
 
-## 폰트 변경
+### 폰트 변경
 
 프롬프트 끝 부분이 깨지는 건 폰트 문제라고 하니 D2Coding 등으로 폰트 변경
 gconf editor 등으로 수정(org > gnome > desktop > interface > font-name / monospace-font-name 항목)
 
-## 프롬프트의 PC명 빼기
+### 프롬프트의 PC명 빼기
 
 쉘 프롬프트의 사용자명@PC명 형식을 변경함
 
@@ -60,7 +60,7 @@ prompt_context() {
 {% endraw %}
 ```
 
-## 프롬프트에 New Line 적용하기
+### 프롬프트에 New Line 적용하기
 
 프롬프트가 한줄이 아닌 두줄로 표시됨.
 
@@ -104,7 +104,7 @@ prompt_newline() {
 
 ![두 옵션이 적용된 이미지](/images/2019-01-19-001.jpg)
 
-## Syntax Hightlight 적용
+### Syntax Hightlight 적용
 
 없는 명령어가 빨간색, 처리할 수 있는 명령어면 녹색으로 표시됨
 
