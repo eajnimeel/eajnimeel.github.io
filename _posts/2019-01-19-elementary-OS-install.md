@@ -5,11 +5,11 @@ tags: [OS, linux, ubuntu, desktop]
 ---
 # Elementary OS 5 Juno
 
-ubuntu 계열의 Desktop Linux 배포판
+[Elementary OS 공식 홈페이지(한국어)](https://elementary.io/ko/)
 
-맥 비슷한 UI를 가짐.
+ubuntu 계열의 Desktop Linux 배포판으로 기본적으로 맥 OSX 비슷한 UI를 가짐. 테마를 더 손보면 더 맥 OSX 느낌을 낼 수 있음.
 
-가볍다고 해서 싱크패드 X220에 설치를 위해 주로 사용하던 Linux Mint를 버리고 듀얼부트로 갈아탐.
+가볍다고 해서 가상머신에서 주로 사용하던 Linux Mint를 버리고 10년전 싱크패드 X220에 듀얼부트로 설치.
 
 이하 설치 후 적당히 한 세팅
 
@@ -60,7 +60,7 @@ prompt_context() {
 
 ## 프롬프트에 New Line 적용하기
 
-프롬프트가 한줄이 아닌 두줄로 표시됨. 
+프롬프트가 한줄이 아닌 두줄로 표시됨.
 
 경로가 길어질 경우 편리함.
 
