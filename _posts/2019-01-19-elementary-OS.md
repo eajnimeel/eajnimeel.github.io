@@ -88,6 +88,7 @@ build_prompt() {
 위 수정 후 바로 아래에 다음 구문 추가
 
 ```sh
+{% raw %}
 prompt_newline() {
   if [[ -n $CURRENT_BG ]]; then
     echo -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{%k%F{blue}%}$SEGMENT_SEPARATOR"
@@ -98,6 +99,7 @@ prompt_newline() {
   echo -n "%{%f%}"
   CURRENT_BG=''
 }
+{% endraw %}
 ```
 
 ![두 옵션이 적용된 이미지](/images/2019-01-19-001.jpg)
