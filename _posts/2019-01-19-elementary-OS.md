@@ -51,11 +51,13 @@ gconf editor 등으로 수정(org > gnome > desktop > interface > font-name / mo
 다음을 `~/.zshrc` 마지막에 추가
 
 ```sh
+{% raw %}
 prompt_context() {
     if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
         prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
     fi
 }
+{% endraw %}
 ```
 
 ## 프롬프트에 New Line 적용하기
