@@ -114,3 +114,14 @@ sudo apt-get install zsh-syntax-highlighting
 # 플러그인을 적용합니다.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
+
+### 기본쉘로 zsh 이용하기
+
+터미널을 실행하면 기본적으로 bash 이 실행된다. 다음 구문을 `~/.bashrc` 맨 아래에 붙여 넣으면 터미널 실행시 bash 이 실행되며 zsh을 실행하게 된다. 이렇게 하는 이유는 다른 소프트웨어로 인한 문제를 피할수 있기 때문이라고 함.
+
+```sh
+# Launch Zsh
+if [ -t 1 ]; then
+    exec zsh
+fi
+```
