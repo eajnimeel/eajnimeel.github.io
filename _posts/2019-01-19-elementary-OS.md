@@ -42,7 +42,7 @@ ZSH_THEME="agnoster"
 ### 폰트 변경
 
 프롬프트 끝 부분이 깨지는 건 폰트 문제라고 하니 D2Coding 등으로 폰트 변경
-gconf editor 등으로 수정(org > gnome > desktop > interface > font-name / monospace-font-name 항목)
+dconf editor 등으로 수정(org > gnome > desktop > interface > font-name / monospace-font-name 항목)
 
 ### 프롬프트의 PC명 빼기
 
@@ -91,7 +91,8 @@ build_prompt() {
 {% raw %}
 prompt_newline() {
   if [[ -n $CURRENT_BG ]]; then
-    echo -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{%k%F{blue}%}$SEGMENT_SEPARATOR"
+    echo -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR
+    %{%k%F{blue}%}$SEGMENT_SEPARATOR"
   else
     echo -n "%{%k%}"
   fi
